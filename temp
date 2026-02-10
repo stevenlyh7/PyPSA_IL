@@ -1,0 +1,7 @@
+state = 'IL'
+url = (f"https://data.catalyst.coop/pudl/"
+       f"out_eia923__monthly_fuel_receipts_costs.csv?"
+       f"_labels=on&_stream=on&_sort=rowid&"
+       f"state__exact={state}&_size=max")
+
+df = pd.read_csv(url)
